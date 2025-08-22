@@ -30,7 +30,7 @@ jobs:
       run: rustup update stable && rustup default stable
 
     - name: Build and test auth-service code
-      working-directory: ./auth-service
+      working-directory: .
       run: |
         cargo build --verbose
         cargo test --verbose
